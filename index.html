@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Favicon Builder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./build/style.css">
+
+<main>
+  <section id="options">
+    <p>choose:</p>
+    <div class="input-wrapper">
+      <label for="favicon-color">favicon color:</label>
+      <input type="color" name="favicon-color" value="#ffd3da">
+    </div>
+    <div class="input-wrapper">
+      <label for="size">favicon size:</label>
+      <input type="range" name="size" min="0" max="100" value="100" data-sizing="%">
+    </div>
+    <div class="input-wrapper">
+      <label for="bg">background color:</label>
+      <input type="color" name="bg" value="#ffffff">
+    </div>
+    <div class="input-wrapper">
+      <p>shape:</p>
+      <input type="radio" name="radius" value="0" data-sizing="%" checked /><label for="radius"> square</label>
+      <input type="radio" name="radius" value="50" data-sizing="%" /><label for="radius"> circle</label>
+    </div>
+  </section>
+
+  <div id="favicon-preview-wrapper">
+    <div id="favicon-preview"></div>
+  </div>
+</main>
+
+<script src="./build/bundle.js"></script>

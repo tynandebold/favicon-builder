@@ -1,0 +1,60 @@
+:root {
+  --bg: #ffffff;
+  --border: #ffffff;
+  --favicon-color: #ffd3da;
+  --radius: 0%;
+  --size: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: monospace;
+  font-size: 12.5px;
+  margin: 0;
+  max-height: 100vh; }
+  body main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; }
+    body main .input-wrapper {
+      align-items: center;
+      display: flex;
+      padding-top: 10px; }
+      body main .input-wrapper p {
+        margin-right: 10px;
+        margin-top: 14px; }
+    body main input[type="color"] {
+      height: 30px;
+      margin-left: 20px;
+      width: 50px; }
+      body main input[type="color"]:hover {
+        cursor: pointer; }
+    body main input[value="50"] {
+      margin-left: 20px; }
+    body main input[type="range"] {
+      margin-left: 10px;
+      margin-top: 3px; }
+    body main input[type="radio"] {
+      margin-right: 6px; }
+    body main label {
+      padding: 10px 0; }
+    body main #favicon-preview-wrapper {
+      align-items: center;
+      background-color: var(--bg);
+      box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 2px rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      display: flex;
+      height: 250px;
+      justify-content: center;
+      margin: 30px auto;
+      position: relative;
+      width: 250px; }
+    body main #favicon-preview {
+      background-color: var(--favicon-color);
+      border-radius: var(--radius);
+      height: var(--size);
+      width: var(--size); }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
