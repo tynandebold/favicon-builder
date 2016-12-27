@@ -48,7 +48,7 @@ body {
       display: flex;
       height: 250px;
       justify-content: center;
-      margin: 30px auto;
+      margin: 30px 0;
       position: relative;
       width: 250px; }
     body main #favicon-preview {
