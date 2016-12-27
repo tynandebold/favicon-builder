@@ -2,19 +2,24 @@
 <html lang="en">
 <meta charset="UTF-8">
 <title>Favicon Builder</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico">
+
+<meta name="description" content="A simple block-color favicon builder.">
+<meta name="keywords" content="tynan debold, tynandebold, tynan, debold, developer, interactive developer, online tool, web app, favicon builder, favicon, idea, ideas, project, dev projec, design, ux design, ui design, ux/ui, web development, microsite">
 
 <link rel="stylesheet" href="./build/style.css">
 
 <main>
-  <section id="options">
+  <section>
     <p>choose:</p>
     <div class="input-wrapper">
       <label for="favicon-color">favicon color:</label>
-      <input type="color" name="favicon-color" value="#ffd3da">
+      <input type="color" name="favicon-color" value="#66ccff">
     </div>
     <div class="input-wrapper">
-      <label for="size">favicon size:</label>
+      <label for="size">color size:</label>
       <input type="range" name="size" min="0" max="100" value="100" data-sizing="%">
     </div>
     <div class="input-wrapper">
@@ -23,8 +28,8 @@
     </div>
     <div class="input-wrapper">
       <p>shape:</p>
-      <input type="radio" name="radius" value="0" data-sizing="%" checked /><label for="radius"> square</label>
-      <input type="radio" name="radius" value="50" data-sizing="%" /><label for="radius"> circle</label>
+      <input type="radio" name="radius" value="0" data-sizing="px" checked /><label for="radius"> square</label>
+      <input type="radio" name="radius" value="125" data-sizing="px" /><label for="radius"> circle</label>
     </div>
   </section>
 
@@ -34,7 +39,7 @@
 
   <div id="btn-wrapper">
     <button>download</button>
-    <img src="download.svg" alt="download">
+    <img src="./imgs/download.svg" alt="download">
   </div>
 </main>
 

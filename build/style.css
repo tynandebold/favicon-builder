@@ -1,8 +1,8 @@
 :root {
   --bg: #ffffff;
   --border: #ffffff;
-  --favicon-color: #ffd3da;
-  --radius: 0%;
+  --favicon-color: #6cf;
+  --radius: 0px;
   --size: 100%; }
 
 *, *:before, *:after {
@@ -14,14 +14,27 @@ body {
   margin: 0;
   max-height: 100vh; }
   body main {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     min-height: 100vh; }
     body main p:first-child {
       margin-top: 0; }
+    body main section {
+      width: 250px; }
     body main .input-wrapper {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       display: flex;
       padding-top: 10px; }
@@ -34,7 +47,7 @@ body {
       width: 50px; }
       body main input[type="color"]:hover {
         cursor: pointer; }
-    body main input[value="50"] {
+    body main input[value="125"] {
       margin-left: 20px; }
     body main input[type="range"] {
       margin-left: 10px;
@@ -44,11 +57,17 @@ body {
     body main label {
       padding: 10px 0 9px; }
     body main #favicon-preview-wrapper {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       background-color: var(--bg);
       box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 2px rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       height: 250px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       margin: 20px 0 32.5px;
       position: relative;
@@ -59,13 +78,19 @@ body {
       height: var(--size);
       width: var(--size); }
     body main #btn-wrapper {
-      display: flex;
       background-color: #fff;
-      border: 1px solid #000;
+      border: 1px solid #999;
       border-radius: 2px;
       box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       padding: 6px 15px 6px 17px;
-      transition: background-color 0.25s ease-in; }
+      transition: background-color 0.25s ease-in;
+      width: 250px; }
       body main #btn-wrapper:hover {
         background-color: #f5f5f5;
         cursor: pointer; }
